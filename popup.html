@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Auto-Filler</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Resume Auto-Filler</h1>
+      <p class="subtitle">Paste JSON from ChatGPT below</p>
+    </header>
+    
+    <main>
+      <div class="input-group">
+        <textarea id="jsonInput" placeholder='{ "first_name": "AJAY", ... }'></textarea>
+      </div>
+      
+      <button id="autoFillBtn" class="primary-btn">
+        <span class="btn-text">Auto Fill Form</span>
+        <span class="btn-loader" style="display: none;"></span>
+      </button>
+
+      <div id="status" class="status-msg"></div>
+    </main>
+
+    <footer>
+      <p>Fill form safely & efficiently</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

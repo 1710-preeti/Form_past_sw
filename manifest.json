@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Resume Auto-Filler",
+  "version": "1.0",
+  "description": "Automatically fill resume forms using JSON data from ChatGPT.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
